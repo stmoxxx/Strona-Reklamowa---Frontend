@@ -1,0 +1,19 @@
+.btn_container{
+    height: 48px;
+    width: 196px;
+    border: none;
+    border-radius: 13px;
+    background-color: rgba(219, 220, 255, 0.3);
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: lighter;
+    color: white;
+    cursor: pointer;
+}
+
+.btn_container:hover{
+    transition: ease-in-out 0.5s;
+    background-color: #FAFAFA;
+    color: rgba(219, 220, 255, 0.9);
+    border: none;
+}

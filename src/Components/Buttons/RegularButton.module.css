@@ -1,0 +1,17 @@
+.btn_container{
+    height: 48px;
+    width: 248px;
+    border: 0.5px #1E1E1E solid;
+    border-radius: 13px;
+    background-color: #FAFAFA;
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: bold;
+    color: #1E1E1E;
+    cursor: pointer;
+}
+
+.btn_container:hover{
+    background-color: #efefef;
+    border: none;
+}

@@ -1,0 +1,13 @@
+.contactus_container{
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    font-family: "Inter";
+    font-size: 96px;
+    text-align: center;
+}

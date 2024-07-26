@@ -1,0 +1,53 @@
+.presentation_container{
+    display: flex;
+    flex-direction: row;
+    padding: 0 35px;
+    gap: 10px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.text_field{
+    font-size: 2.2vw;
+    height: 220px;
+    font-family: Inter;
+    font-weight: bold;
+}
+
+.colored_text{
+    color: #E34D3C;
+}
+
+.left_side{
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    font-size: 20px;
+    height: 3vh;
+    font-family: Inter;
+    padding-top: 36px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.right_side{
+
+}
+
+.slider{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px #1D1B20 solid;
+    border-radius: 14px;
+    height: 460px;
+    width: 870px;
+    font-size: 64px;
+    font-family: "Roboto";
+    font-weight: bold;
+}

@@ -1,0 +1,16 @@
+.btn_container{
+    height: 48px;
+    width: 248px;
+    border: 0.5px rgba(2, 6, 111, 0.8) solid;
+    border-radius: 13px;
+    background-color: #FAFAFA;
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(2, 6, 111, 0.8);
+}
+
+.btn_container:hover{
+    background-color: #efefef;
+    border: none;
+}

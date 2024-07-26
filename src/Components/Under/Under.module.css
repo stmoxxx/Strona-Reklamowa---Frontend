@@ -1,0 +1,22 @@
+.container{
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 0.5px solid #79747E;
+}
+
+.logo{
+    margin: 20px 0;
+    width: 110px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid #79747E;
+    border-radius: 8px;
+    color: #1D1B20;
+    font-family: "Roboto";
+    font-size: 24px;
+    text-transform: uppercase;
+}

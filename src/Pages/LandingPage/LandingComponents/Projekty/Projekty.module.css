@@ -1,0 +1,33 @@
+.background {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+    background: linear-gradient(rgba(255, 43, 43, 0),rgba(255, 43, 43, 0.24),
+    rgba(255, 43, 43, 0.4), rgba(255, 43, 43, 0.24), rgba(255, 43, 43, 0) );
+    border: none;
+    position: relative;
+}
+
+.title{
+    font-size: 96px;
+    font-family: Roboto;
+    font-weight: bold;
+    color: #FAFAFA;
+    margin-top: 10%;
+    margin-left: 6%;
+    margin-bottom: 50px;
+    text-shadow: 6px 8px 0px rgba(255, 255, 255, 0.3);
+}
+
+.slider{
+    width: 90%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: visible;
+    --swiper-navigation-size: 30px;
+    --swiper-navigation-top-offset: 50%;
+    --swiper-navigation-sides-offset: 0px;
+    --swiper-navigation-color: #FFFFFF;
+}
