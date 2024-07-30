@@ -1,4 +1,4 @@
-#Actual images of project
+# Actual images of project
 ### Header + Presentation [https://www.dropbox.com/scl/fi/8nwj4afs1ddrq07mf44wn/header-presentation.png?rlkey=7qw18q6l1xb44w5i4glk7biig&st=08z9c6ut&dl=0]
 
 ### Proposals [https://www.dropbox.com/scl/fi/3dyxch6nspjb7eqfuer81/proposals.png?rlkey=1wmjdwepp7j9e76nyr2fl2lwf&st=agihhkmy&dl=0]
