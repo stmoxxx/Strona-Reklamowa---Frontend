@@ -1,22 +1,15 @@
 FROM node:18-alpine
 
-WORKDIR /appf
-
-COPY ./package.json .
-
+WORKDIR /usr/appfront
+COPY ./ /usr/appfront
 RUN npm install
+
+COPY ./package.json ./usr/src/appfront/package.json
+
+RUN npm install --save-dev @babel/plugin-proposal-private-property-in-object --legacy-peer-deps
 
 COPY . .
 
 EXPOSE 3000
 
 CMD ["npm", "start"]
-
-
-#FROM node:10
-##Create app directory
-#WORKDIR /app
-#COPY abc/package*.json ./
-#RUN ls -al
-#RUN npm install
-#CMD ["npm","start"]
