@@ -6,5 +6,5 @@ services:
     ports:
       - '3000:3000'
     volumes:
-      - /appf/node_modules
-      - ./frontend:/appf
+      - /appfront/node_modules
+      - ./frontend:/appfront
