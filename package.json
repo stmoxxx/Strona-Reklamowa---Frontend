@@ -26,9 +26,6 @@
     "eject": "react-scripts eject"
   },
 
-  "proxy": "http://host.docker.internal:8085",
-
-
   "eslintConfig": {
     "extends": [
       "react-app",
