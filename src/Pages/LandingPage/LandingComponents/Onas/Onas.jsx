@@ -11,8 +11,8 @@ const Onas = () => {
                 O Nas
             </div>
             <div className={myOnas.onas_wrap}>
-                <div className={myOnas.photo}>
-                    <img src={onasPhoto} alt={''}/>
+                <div className={myOnas.photoWrap}>
+                    <img className={myOnas.photo} src={onasPhoto} alt={''}/>
                 </div>
                 <div className={myOnas.text_container}>
                     <div className={myOnas.text_title}>

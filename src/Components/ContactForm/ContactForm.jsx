@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import emailjs from '@emailjs/browser';
 import myContactForm from './ContactForm.module.css'
-import data from './meta.env'
 
 
 const ContactForm = () => {
@@ -10,7 +9,6 @@ const ContactForm = () => {
         register,
         handleSubmit,
         reset,
-        formState: { errors },
     } = useForm();
     const [disabled, setDisabled] = useState(false);
     const [alertInfo, setAlertInfo] = useState({
@@ -19,25 +17,19 @@ const ContactForm = () => {
         type: '',
     });
 
-    // Shows alert message for form submission feedback
     const toggleAlert = (message, type) => {
         setAlertInfo({ display: true, message, type });
 
-        // Hide alert after 5 seconds
         setTimeout(() => {
             setAlertInfo({ display: false, message: '', type: '' });
         }, 5000);
     };
 
-    // Function called on submit that uses emailjs to send email of valid contact form
     const onSubmit = async (data) => {
-        // Destrcture data object
         const { name, email, phone, message } = data;
         try {
-            // Disable form while processing submission
             setDisabled(true);
 
-            // Define template params
             const templateParams = {
                 name,
                 email,
@@ -45,7 +37,6 @@ const ContactForm = () => {
                 message,
             };
 
-            // Use emailjs to email contact form data
             await emailjs.send(
                 import.meta.env.VITE_SERVICE_ID,
                 import.meta.env.VITE_TEMPLATE_ID,
@@ -53,16 +44,12 @@ const ContactForm = () => {
                 import.meta.env.VITE_PUBLIC_KEY,
             );
 
-            // Display success alert
             toggleAlert('Form submission was successful!', 'success');
         } catch (e) {
             console.error(e);
-            // Display error alert
-            toggleAlert('Uh oh. Something went wrong.', 'danger');
+            toggleAlert('We are not taking the requests yet :(', 'danger');
         } finally {
-            // Re-enable form submission
             setDisabled(false);
-            // Reset contact form fields after submission
             reset();
         }
     };
@@ -98,11 +85,7 @@ const ContactForm = () => {
                                             className={myContactForm.name}
                                             placeholder='Imie i nazwisko'
                                         ></input>
-                                        {errors.name && (
-                                            <span className={myContactForm.error_message}>
-                        {errors.name.message}
-                      </span>
-                                        )}
+                                       
                                     </div>
                                     <div className='col-6'>
                                         <div className={myContactForm.email_title}>Email</div>
@@ -117,11 +100,7 @@ const ContactForm = () => {
                                             className={myContactForm.email}
                                             placeholder='Email'
                                         ></input>
-                                        {errors.email && (
-                                            <span className={myContactForm.error_message}>
-                        Please enter a valid email address
-                      </span>
-                                        )}
+                                        
                                     </div>
                                 </div>
                                 {/* Row 2 of form */}
@@ -144,11 +123,7 @@ const ContactForm = () => {
                                             className={myContactForm.phone}
                                             placeholder='Telefon'
                                         ></input>
-                                        {errors.subject && (
-                                            <span className={myContactForm.error_message}>
-                        {errors.subject.message}
-                      </span>
-                                        )}
+                                        
                                     </div>
                                 </div>
                                 {/* Row 3 of form */}
@@ -164,11 +139,7 @@ const ContactForm = () => {
                                             className={myContactForm.message}
                                             placeholder='Wiadomość'
                                         ></textarea>
-                                        {errors.message && (
-                                            <span className={myContactForm.error_message}>
-                        Please enter a message
-                      </span>
-                                        )}
+                                       
                                     </div>
                                 </div>
 

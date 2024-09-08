@@ -13,7 +13,7 @@ const Presentation = () => {
                 </span>&nbsp;
                     stron internetowych w Polsce. Tworzymy strony internetowe dla Twojego biznesu.
                 </div>
-                <div>
+                <div className={myPresentation.opis} >
                     Od identyfikacji wizualnej po pełną stronę internetową, tworzymy narzędzia, które wyróżnią Twoją
                     firmę na rynku i pomogą Ci przyciągnąć nowych klientów.
                 </div>
@@ -25,9 +25,7 @@ const Presentation = () => {
 
             <div className={myPresentation.right_side}>
                 <div className={myPresentation.slider}>
-                    Slider przykładów
-                        /
-                    Prezentacja wideo
+                    Slider
                 </div>
             </div>
         </div>

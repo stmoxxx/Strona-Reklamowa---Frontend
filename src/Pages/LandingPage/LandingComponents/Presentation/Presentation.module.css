@@ -5,11 +5,13 @@
     gap: 10px;
     margin-top: 30px;
     margin-bottom: 60px;
+    justify-content: center;
+    align-items: center;
 }
 
 .text_field{
     font-size: 2.2vw;
-    height: 220px;
+    max-height: 220px;
     font-family: Inter;
     font-weight: bold;
 }
@@ -23,20 +25,21 @@
     flex-direction: column;
     gap: 36px;
     font-size: 20px;
-    height: 3vh;
     font-family: Inter;
     padding-top: 36px;
 }
-
+.opis{
+    font-size: 2vw;
+    max-height: 220px;
+    font-family: Inter;
+}
 .buttons{
     display: flex;
     flex-direction: row;
     gap: 30px;
 }
 
-.right_side{
 
-}
 
 .slider{
     display: flex;
@@ -50,4 +53,49 @@
     font-size: 64px;
     font-family: "Roboto";
     font-weight: bold;
+}
+
+
+@media (max-width: 1416px) {
+    .presentation_container{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .left_side{
+        text-align: center;
+        max-width: 1000px;
+        align-items: center;
+    }
+}
+
+@media (max-width: 922px) {
+    .slider{
+        height: 230px;
+        width: 435px;
+    }
+
+    .left_side{
+        text-align: center;
+        max-width: 500px;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .presentation_container{
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .slider{
+        height: 116px;
+        width: 218px;
+    }
+
+    .left_side{
+        text-align: center;
+        max-width: 254px;
+        align-items: center;
+        gap: 24px;
+    }
 }

@@ -9,28 +9,42 @@ import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 
 import {Swiper, SwiperSlide} from 'swiper/react';
-import {EffectCoverflow, Navigation, Pagination} from 'swiper/modules';
+import {Navigation} from 'swiper/modules';
 
 function ProjectsSlider () {
     return (
         <div className={"container"}>
             <Swiper className={myProjekty.slider}
-                    modules={[Navigation, Pagination]}
-                    spaceBetween={15}
-                    slidesPerView={3}
+                    modules={[Navigation]}
                     loop={true}
                     navigation={true}
                     centeredSlides={true}
                     centeredSlidesBounds={true}
-                    resizeObserver={true}
-                    setWrapperSize={true}
-                    updateOnWindowResize={true}
+                    breakpoints={
+                        {
+                        0: {
+                            slidesPerView: 1,
+                            spaceBetween: 5
+                          },
+                        640:
+                        {
+                            slidesPerView: 2,
+                            spaceBetween: 10
+                        },
+                        1200:
+                        {
+                            slidesPerView: 3,
+                            spaceBetween: 15
+                        },
+                       
+                    }
+                }
 
             >
-                <SwiperSlide><img src={project1} alt={''}/></SwiperSlide>
-                <SwiperSlide><img src={project2} alt={''}/></SwiperSlide>
-                <SwiperSlide><img src={project3} alt={''}/></SwiperSlide>
-                <SwiperSlide><img src={project2} alt={''}/></SwiperSlide>
+                <SwiperSlide className="swiper-slide"><img src={project1} alt={''}/></SwiperSlide>
+                <SwiperSlide className="swiper-slide"><img src={project2} alt={''}/></SwiperSlide>
+                <SwiperSlide className="swiper-slide"><img src={project3} alt={''}/></SwiperSlide>
+                <SwiperSlide className="swiper-slide"><img src={project2} alt={''}/></SwiperSlide>
 
             </Swiper>
         </div>

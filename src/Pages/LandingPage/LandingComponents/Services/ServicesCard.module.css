@@ -14,16 +14,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     background-color: rgba(255, 255, 255, 0.05);
-    -webkit-backdrop-filter: blur(100px);
-    backdrop-filter: blur(100px);
     border-radius: 30px;
 }
 
 .photoWrap{
     border-radius: 20px;
-    width: 526px;
+    max-width: 526px;
     height: 324px;
     object-fit: cover;
 }
@@ -37,7 +35,6 @@
 
 .title{
     font-family: "Roboto";
-
     font-size: 40px;
     color: white;
     text-align: center;
@@ -45,8 +42,61 @@
 
 .description{
     font-family: "Roboto";
-    width: 540px;
+    max-width: 540px;
     font-size: 24px;
     color: white;
     text-align: center;
 }
+
+@media (max-width: 1416px) {
+    .photoWrap{
+        max-width: 460px;
+        max-height: 300px;
+    }
+}
+
+@media (max-width: 1280px){
+    .photoWrap{
+        max-width: 360px;
+        max-height: 250px;
+    }
+}
+
+@media (max-width: 922px) {
+    .photoWrap{
+        max-width: 300px;
+        max-height: 200px;
+    }
+    
+}
+
+@media (max-width: 740px) {
+
+    .descriptionWrap{
+        align-items: center;
+    }
+
+    .description{
+        align-items: center;
+        max-width: 240px;
+        font-size: 16px;
+    }
+
+    .title{
+        max-width: 326px;
+        font-size: 24px;
+    }
+
+    .photoWrap{
+        max-width: 240px;
+        max-height: 152px;
+    }
+
+    .cardsWrap{
+        flex-direction: column;
+        position: static;
+        align-items: end;
+    }
+
+}
+

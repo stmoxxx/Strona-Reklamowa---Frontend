@@ -1,6 +1,6 @@
 .btn_container{
     height: 48px;
-    width: 248px;
+    max-width: 248px;
     border: 0.5px rgba(2, 6, 111, 0.8) solid;
     border-radius: 13px;
     background-color: #FAFAFA;
@@ -13,4 +13,28 @@
 .btn_container:hover{
     background-color: #efefef;
     border: none;
+}
+
+@media (max-width: 1416px){
+    .btn_container{
+        max-width: 198px;
+        height: 42px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 922px){
+    .btn_container{
+        max-width: 148px;
+        height: 36px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px){
+    .btn_container{
+        max-width: 148px;
+        height: 30px;
+        font-size: 12px;
+    }
 }

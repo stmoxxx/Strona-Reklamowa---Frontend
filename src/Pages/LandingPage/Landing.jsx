@@ -15,7 +15,7 @@ const Landing = () => {
             <Proposals/>
             <Services/>
             <Projekty/>
-            <Onas/>
+             <Onas/>
             <Opinions/>
             <ContactUs/>
             <Under/>

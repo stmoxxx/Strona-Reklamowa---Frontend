@@ -1,6 +1,6 @@
 .btn_container{
     height: 48px;
-    width: 196px;
+    max-width: 196px;
     border: none;
     border-radius: 13px;
     background-color: rgba(219, 220, 255, 0.3);

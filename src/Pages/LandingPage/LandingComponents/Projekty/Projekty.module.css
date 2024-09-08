@@ -21,13 +21,35 @@
 }
 
 .slider{
-    width: 90%;
+    max-width: 99%;
     height: 100%;
     margin-left: auto;
     margin-right: auto;
-    overflow: visible;
+    overflow: hidden;
     --swiper-navigation-size: 30px;
     --swiper-navigation-top-offset: 50%;
     --swiper-navigation-sides-offset: 0px;
     --swiper-navigation-color: #FFFFFF;
 }
+
+@media (max-width: 460px) {
+    .slider{
+        max-width: 320px;
+    }
+
+    .title{
+        font-size: 48px;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .swiper-container {
+      width: 640px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .swiper-container {
+      width: 768px;
+    }
+  }

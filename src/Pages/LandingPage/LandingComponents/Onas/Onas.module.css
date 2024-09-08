@@ -1,5 +1,6 @@
 .onas_container{
     margin-bottom: 70px;
+    padding:  0 40px;
 }
 
 .title{
@@ -18,6 +19,12 @@
     flex-direction: row;
 }
 
+.photoWrap{
+    display: flex;
+    align-items: center;
+    object-fit: cover;
+}
+
 .photo{
     margin-left: 122px;
     margin-top: 139px;
@@ -29,9 +36,9 @@
     background-color: rgba(29, 29, 29, 1);
     padding-top: 40px;
     padding-bottom: 30px;
-    width: 768px;
-    height: 860px;
-    border-radius: 48px;
+    max-width: 768px;
+    max-height: 860px;
+    border-radius: 48px 48px 48px 0px ;
     justify-content: space-between;
     align-items: center;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25),-5px -5px 10px rgba(0, 0, 0, 0.25) ;
@@ -56,7 +63,7 @@
 
 .logo{
     color: #FFFFFF;
-    width: 110px;
+    max-width: 110px;
     height: 60px;
     display: flex;
     justify-content: center;
@@ -67,3 +74,94 @@
     font-size: 24px;
     text-transform: uppercase;
 }
+
+@media (max-width: 1546px){
+    .photo{
+        margin-left: 82px;
+        margin-top: 44px;
+    }
+    .text{
+        font-size: 24px;
+    }
+
+    .text_title{
+        font-size: 36px;
+    }
+
+    .photo{
+        max-width: 740px;
+        max-height: 450px;
+    }
+
+    .text_container{
+        max-width: 640px;
+    }
+}
+
+@media (max-width: 1200px){
+    .text{
+        font-size: 20px;
+    }
+
+    .text_title{
+        font-size: 32px;
+    }
+
+    .photo{
+        max-width: 600px;
+        max-height: 390px;
+    }
+
+    .text_container{
+        max-width: 580px;
+    }
+}
+
+@media (max-width: 1060px){
+
+    .title{
+        font-size: 68px
+    }
+
+    .text_container{
+        gap: 10px;
+    }
+   .onas_wrap{
+    flex-direction: column;
+    align-items: center;
+   }
+
+   .photo{
+    margin: 0;
+    }
+}
+
+@media (max-width: 740px){
+
+    .title{
+        font-size: 68px
+    }
+
+    .text{
+        font-size: 16px;
+    }
+
+    .text_title{
+        font-size: 24px;
+        padding: 0 15px;
+    }
+    .text_container{
+        gap: 10px;
+        padding-top: 20px;
+    }
+    .onas_wrap{
+     flex-direction: column;
+     align-items: center;
+    }
+ 
+    .photo{
+        max-width: 390px;
+        max-height: 210px;
+        margin: 0;
+    }
+ }
