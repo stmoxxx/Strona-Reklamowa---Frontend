@@ -26,126 +26,132 @@ const OpinionCards = () => {
             <SwiperSlide className={myOpinions.swiper_slider}>
             <div className={myOpinions.card}>
                     <div className={myOpinions.opinion_title}>
-                        Tytuł opinii
+                        Excellent User-Friendly Design
                     </div>
                     <div className={myOpinions.opinion_text}>
-                        Opinia
+                        The website you designed exceeded my expectations.
+                        It's easy to navigate, visually appealing, and perfectly aligned with my brand. I've received great feedback from my customers as well.
                     </div>
                     <div className={myOpinions.opinion_author_container}>
                         <div>
                             <img className={myOpinions.opinion_author_img} src={author} alt={''}/>
                         </div>
                         <div className={myOpinions.opinion_author}>
-                            Imię autora recenzji
+                            Sarah Johnson
                         </div>
                     </div>
                     <div className={myOpinions.opinion_date}>
-                        Date
+                        September 9, 2024
                     </div>
                 </div>
             </SwiperSlide>
             <SwiperSlide className={myOpinions.swiper_slider}>
             <div className={myOpinions.card}>
                     <div className={myOpinions.opinion_title}>
-                        Tytuł opinii
+                        Professional and Modern
                     </div>
                     <div className={myOpinions.opinion_text}>
-                        Opinia
+                        I'm thoroughly impressed with the professionalism and modern look of the website.
+                        It has significantly improved my online presence, and my customers find it very easy to use. Thank you for your great work!
                     </div>
                     <div className={myOpinions.opinion_author_container}>
                         <div>
                             <img className={myOpinions.opinion_author_img} src={author} alt={''}/>
                         </div>
                         <div className={myOpinions.opinion_author}>
-                            Imię autora recenzji
+                            David Martinez
                         </div>
                     </div>
                     <div className={myOpinions.opinion_date}>
-                        Date
+                        September 7, 2024
                     </div>
                 </div>
             </SwiperSlide>
             <SwiperSlide className={myOpinions.swiper_slider}>
             <div className={myOpinions.card}>
                     <div className={myOpinions.opinion_title}>
-                        Tytuł opinii
+                        Fast and Efficient Work
                     </div>
                     <div className={myOpinions.opinion_text}>
-                        Opinia
+                        You delivered the project quickly without compromising quality.
+                        The website runs smoothly, looks fantastic, and my business has already seen an increase in traffic. I highly recommend your services!
                     </div>
                     <div className={myOpinions.opinion_author_container}>
                         <div>
                             <img className={myOpinions.opinion_author_img} src={author} alt={''}/>
                         </div>
                         <div className={myOpinions.opinion_author}>
-                            Imię autora recenzji
+                            Emily Stevens
                         </div>
                     </div>
                     <div className={myOpinions.opinion_date}>
-                        Date
+                        September 3, 2024
                     </div>
                 </div>
             </SwiperSlide>
             <SwiperSlide className={myOpinions.swiper_slider}>
             <div className={myOpinions.card}>
                     <div className={myOpinions.opinion_title}>
-                        Tytuł opinii
+                        Increased Customer Engagement
                     </div>
                     <div className={myOpinions.opinion_text}>
-                        Opinia
+                        The design and functionality of the website have really increased customer engagement.
+                        The clean layout and attention to detail have made it easier for visitors to find what they're looking for. Fantastic job!
                     </div>
                     <div className={myOpinions.opinion_author_container}>
                         <div>
                             <img className={myOpinions.opinion_author_img} src={author} alt={''}/>
                         </div>
                         <div className={myOpinions.opinion_author}>
-                            Imię autora recenzji
+                            Michael Thompson
                         </div>
                     </div>
                     <div className={myOpinions.opinion_date}>
-                        Date
+                        August 29, 2024
                     </div>
                 </div>
             </SwiperSlide>
             <SwiperSlide className={myOpinions.swiper_slider}>
             <div className={myOpinions.card}>
                     <div className={myOpinions.opinion_title}>
-                        Tytuł opinii
+                        Very Responsive Design
                     </div>
                     <div className={myOpinions.opinion_text}>
-                        Opinia
+                        The website works flawlessly across all devices, which has been a huge advantage for my business.
+                        The design is responsive, and I love how it looks on mobile. Your hard work truly paid off!
                     </div>
                     <div className={myOpinions.opinion_author_container}>
                         <div>
                             <img className={myOpinions.opinion_author_img} src={author} alt={''}/>
                         </div>
                         <div className={myOpinions.opinion_author}>
-                            Imię autora recenzji
+                            Linda Nguyen
                         </div>
                     </div>
                     <div className={myOpinions.opinion_date}>
-                        Date
+                        September 5, 2024
                     </div>
                 </div>
             </SwiperSlide>
             <SwiperSlide className={myOpinions.swiper_slider}>
             <div className={myOpinions.card}>
                     <div className={myOpinions.opinion_title}>
-                        Tytuł opinii
+                        Seamless User Experience
                     </div>
                     <div className={myOpinions.opinion_text}>
-                        Opinia
+                        From the layout to the features, everything is well-organized and user-friendly.
+                        It’s clear that you took the time to understand my business and crafted a site that reflects that perfectly. Great work!
                     </div>
                     <div className={myOpinions.opinion_author_container}>
                         <div>
                             <img className={myOpinions.opinion_author_img} src={author} alt={''}/>
                         </div>
                         <div className={myOpinions.opinion_author}>
-                            Imię autora recenzji
+                            Robert Harris
                         </div>
                     </div>
                     <div className={myOpinions.opinion_date}>
-                        Date
+                        September 1, 2024
                     </div>
                 </div>
             </SwiperSlide>

@@ -1,26 +1,30 @@
 import React from 'react';
 import myHeader from './Header.module.css'
 import myLogo from '../../images/newlogo.png'
+import {Link} from "react-router-dom";
+
 
 const Header = () => {
     return (
         <div className={myHeader.header_container}>
             <div >
-                <img className={myHeader.logo} src={myLogo} alt={''}/>
+                <Link to={'/'}>
+                    <img className={myHeader.logo} src={myLogo} alt={''}/>
+                </Link>
             </div>
             <div className={myHeader.header_right}>
-                <div className={myHeader.header_right_item}>
+                <Link to={'/services'} className={myHeader.header_right_item}>
                     Usługi
-                </div>
-                <div className={myHeader.header_right_item}>
+                </Link>
+                <Link to={'/projects'} className={myHeader.header_right_item}>
                     Projekty
-                </div>
-                <div className={myHeader.header_right_item}>
+                </Link>
+                <Link to={'/about'} className={myHeader.header_right_item}>
                     O nas
-                </div>
-                <div className={myHeader.header_right_item}>
+                </Link>
+                <Link to={'/contact'} className={myHeader.header_right_item}>
                     Kontakt
-                </div>
+                </Link>
             </div>
         </div>
     );

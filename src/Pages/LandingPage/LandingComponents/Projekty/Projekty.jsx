@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import myProjekty from "../Projekty/Projekty.module.css";
 import ProjectsSlider from "./ProjectsSlider";
 

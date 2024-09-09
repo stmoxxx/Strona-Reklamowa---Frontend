@@ -16,6 +16,8 @@
     font-weight: bold;
 }
 
+
+
 .colored_text{
     color: #E34D3C;
 }
@@ -39,20 +41,32 @@
     gap: 30px;
 }
 
+.video{
+    border-radius: 14px;
+    scale: 1.28;
+    /*height: 460px;*/
+    /*width: 870px;*/
+    /*width: 100%;*/
+    position: absolute;
+    align-items: center;
 
+    height: 460px;
+    width: 870px;
+}
 
 .slider{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px #1D1B20 solid;
     border-radius: 14px;
     height: 460px;
-    width: 870px;
+    width: 818px;
     font-size: 64px;
-    font-family: "Roboto";
     font-weight: bold;
+
+    position: relative;
+    overflow: hidden;
 }
 
 

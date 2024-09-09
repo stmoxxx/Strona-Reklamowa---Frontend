@@ -12,7 +12,7 @@
 .logo{
     object-fit: cover;
     scale: 0.8;
-    max-width: 110px;
+    width: 110px;
     height: 60px;
     display: flex;
     justify-content: center;
@@ -28,7 +28,7 @@
 .header_right{
     display: flex;
     flex-direction: row;
-    gap: 8px;
+    gap: 12px;
 }
 
 .header_right_item{
@@ -41,6 +41,9 @@
     font-size: 16px;
     cursor: pointer;
     border-radius: 8px;
+    color: #1E1E1E;
+    text-decoration: none;
+    padding: 0 5px;
 }
 
 .header_right_item:hover{

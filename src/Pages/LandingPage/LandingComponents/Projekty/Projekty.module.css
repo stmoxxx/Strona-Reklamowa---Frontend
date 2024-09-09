@@ -20,7 +20,7 @@
     text-shadow: 6px 8px 0px rgba(255, 255, 255, 0.3);
 }
 
-.slider{
+.slider {
     max-width: 99%;
     height: 100%;
     margin-left: auto;
@@ -28,7 +28,7 @@
     overflow: hidden;
     --swiper-navigation-size: 30px;
     --swiper-navigation-top-offset: 50%;
-    --swiper-navigation-sides-offset: 0px;
+    --swiper-navigation-sides-offset: 100px;
     --swiper-navigation-color: #FFFFFF;
 }
 
